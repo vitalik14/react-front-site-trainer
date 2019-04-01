@@ -1,0 +1,74 @@
+.cont {
+  width: 600px;
+  box-sizing: border-box;
+  margin: 20px auto 0;
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 20px 40px 25px;
+  outline: none;
+
+  @media (max-width: 767px) {
+    width: 90%;
+  }
+}
+
+.topCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.heading {
+  margin: 0;
+  color: #4D4D4E;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.closeIconCont {
+  font-size: 22px;
+  color: #4D4D4E;
+  cursor: pointer;
+}
+
+.description {
+  margin: 0 0 25px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.controlLabel {
+  width: 115px;
+  &:before {
+    content: attr(data-measure) ' ';
+    color: #4D4D4E;
+    font-size: 14px;
+    position: absolute;
+    top: 25px;
+  }
+  > div {
+    width: 115px;
+    > div {
+      &:before {
+        border-bottom-color: rgba(0,0,0,0.12);
+      }
+      > input {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+.fieldsCont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.errorLabel {
+  margin: 0 0 20px;
+  color: #D0021B;
+  font-size: 12px;
+}

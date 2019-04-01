@@ -1,0 +1,69 @@
+.seminars {
+  background: #ffffff;
+  padding: 38px 20px 1px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+  margin-bottom: 40px;
+  &__main-title {
+    opacity: 0.87;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      font-size: 30px;
+    }
+  }
+  &__list {
+
+  }
+  &__one {
+    margin-bottom: 35px;
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    @media (max-width: 767px) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top:1px solid #CFD8DC;
+    padding: 13px 20px;
+    margin:0 -20px;
+  }
+  &__contacts-desc {
+    display: flex;
+    align-items: center;
+  }
+  &__contacts-ava {
+    width: 36px;
+    height: 36px;
+    margin-right: 13px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+  }
+  &__contacts-name {
+    font-size: 13px;
+    color: #797979;
+  }
+  &__contacts-social {
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 2px;
+      }
+    }
+  }
+}

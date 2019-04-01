@@ -1,0 +1,35 @@
+.switcherCont {
+  display: flex;
+  align-items: center;
+}
+
+.iconCont {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  font-size: 18px;
+  color: #EC407A;
+}
+
+.title {
+  margin: 0;
+  color: #EC407A;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  white-space: normal;
+}
+
+.description {
+  margin: 4px 0 0;
+  color: #4D4D4E;
+  font-size: 13px;
+  line-height: 16px;
+  white-space: normal;
+}
+
+.time {
+  color: #9E9E9E;
+  font-size: 12px;
+  line-height: 16px;
+}

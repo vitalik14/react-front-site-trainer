@@ -1,0 +1,50 @@
+.banner {
+  padding: 14px 20px 20px;
+  margin-bottom: 20px;
+  background-image: url('../../assets/img/png/achievements-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.bannerTitle {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.bannerDescription {
+  margin: 0 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.flexWrapper {
+  display: flex;
+
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.postsWrapper {
+  flex-basis: 70%;
+  margin-right: 20px;
+
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}
+
+.sidebarWrapper {
+  flex-basis: 30%;
+  max-width: 100%;
+
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+  }
+}

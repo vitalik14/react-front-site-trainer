@@ -1,0 +1,43 @@
+.modalCont {
+  width: 448px;
+  box-sizing: border-box;
+  margin: 20px auto 0;
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 20px 40px 30px;
+  outline: none;
+
+  @media (max-width: 767px) {
+    width: 90%;
+  }
+}
+
+.modalTopCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalCloseIconCont {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.modalTitle {
+  margin: 0 0 10px;
+  color: #4D4D4E;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.modalDesc {
+  margin: 10px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.modalButtonsCont {
+  display: flex;
+  justify-content: flex-start;
+}

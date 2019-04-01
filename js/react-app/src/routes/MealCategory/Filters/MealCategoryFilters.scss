@@ -1,0 +1,35 @@
+.block {
+  padding: 8px 20px 10px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.rangeInputsWrap {
+  display: flex;
+}
+
+.label {
+  margin: 10px 0 -5px;
+  color: #9E9E9E;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 14px;
+}
+
+.sliderWrapper {
+  padding: 0 6px;
+  margin-bottom: -10px;
+}
+
+.buttonsWrap {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px -26px 0;
+  padding: 10px 16px 0;
+  border-top: 1px solid #EEEEEE;
+
+  > button:first-child {
+    margin-right: 5px;
+  }
+}

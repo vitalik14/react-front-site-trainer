@@ -1,0 +1,66 @@
+.cont {
+  padding: 10px 2px;
+  overflow: hidden;
+}
+
+.chartsCont {
+  padding: 15px 30px 0;
+  overflow: hidden;
+
+  @media (max-width: 600px) {
+    padding: 0;
+  }
+}
+
+.chartsInnerCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 600px) {
+    padding: 15px 30px 0;
+  }
+}
+
+.chartsInnerTopCont {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.paginationCont {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0 30px;
+}
+
+.paginationCount {
+  margin: 0 0 10px;
+  color: #9E9E9E;
+  opacity: 0.87;
+  font-size: 15px;
+}
+
+.chartsTwo {
+  display: flex;
+  @media (max-width: 480px) {
+    display: block;
+  }
+}
+
+.chartsTwo>div {
+  width: 50%;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}

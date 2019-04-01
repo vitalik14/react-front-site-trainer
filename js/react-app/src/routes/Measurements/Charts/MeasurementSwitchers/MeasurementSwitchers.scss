@@ -1,0 +1,46 @@
+.checkboxCont {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.colorLabel {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: -4px;
+}
+
+.desktopCont {
+  @media (max-width: 1770px) {
+    display: none;
+  }
+}
+
+.mobileCont {
+  display: none;
+  position: relative;
+
+  @media (max-width: 1770px) {
+    display: block;
+  }
+}
+
+.mobileInnerCont {
+  padding: 0 16px;
+}
+
+.popoverOpenBtnCont {
+  @media (max-width: 767px) {
+    margin-top: 10px;
+  }
+}
+
+.popoverCloseBtnCont {
+  padding: 10px 0 20px;
+  text-align: center;
+
+  button {
+    width: 100%;
+  }
+}

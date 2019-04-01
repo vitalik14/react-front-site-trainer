@@ -1,0 +1,44 @@
+.cont {
+  padding: 30px 20px 25px;
+  margin-bottom: 25px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+}
+
+.pageTitle {
+  margin: 0 0 18px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.labelBtn {
+  display: block;
+  margin-bottom: 8px;
+  padding: 0;
+  color: #4D4D4E;
+  font-size: 13px;
+  line-height: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.pickersCont {
+  display: flex;
+  margin-bottom: 22px;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+}
+
+.pickerCont:first-child {
+  margin-right: 20px;
+
+  @media (max-width: 640px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

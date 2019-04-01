@@ -1,0 +1,100 @@
+.app-download{
+  &__one-sect{
+    margin-bottom: 25px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__title{
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 28px;
+    opacity: 0.87;
+    color: #4D4D4E;
+  }
+  &__box{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 -10px;
+  }
+  &__col{
+    width: 50%;
+    padding: 0px 10px 20px;
+    box-sizing: border-box;
+    @media (max-width: $media-medium-size) {
+      width: 100%;
+    }
+  }
+  &__one{
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+  }
+  &__one-img{
+    img{
+      max-width: 100%;
+    }
+  }
+  &__one-links{
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 15px 32px;
+    @media (max-width: $media-small-size) {
+      padding: 10px;
+      letter-spacing: 0.25px;
+    }
+  }
+  &__one-app-store{
+    color: #4D4D4E;
+    text-decoration: none;
+    position: relative;
+    padding-left: 21px;
+    &:before{
+      content: "";
+      font-size: 12px;
+      text-transform: none;
+      background: url("../images/icons/icon_app-store.svg")no-repeat;
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: -1px;
+      position: absolute;
+      background-size: contain;
+    }
+    &:hover{
+      color: $main-color;
+    }
+  }
+  &__one-google-store{
+    color: #4D4D4E;
+    text-decoration: none;
+    margin-left: 32px;
+    position: relative;
+    padding-left: 24px;
+    &:before{
+      content: "";
+      font-size: 12px;
+      text-transform: none;
+      background: url("../images/icons/icon_google-play.svg")no-repeat;
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: -1px;
+      position: absolute;
+      background-size: contain;
+    }
+    &:hover{
+      color: $main-color;
+    }
+    @media (max-width: $media-small-size) {
+      margin-left: 10px;
+    }
+  }
+}

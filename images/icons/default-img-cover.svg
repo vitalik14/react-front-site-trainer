@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="252px" height="120px" viewBox="0 0 252 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>cover-placeholder</title>
+    <desc>Created with Sketch.</desc>
+    <g id="7.-Profil" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="07_02_00_00_profil_einstellungen" transform="translate(-994.000000, -588.000000)" fill-rule="nonzero">
+            <g id="2" transform="translate(970.000000, 492.000000)">
+                <g id="Group-2" transform="translate(0.000000, 72.000000)">
+                    <g id="cover-placeholder" transform="translate(24.000000, 24.000000)">
+                        <rect id="Rectangle" fill="#CFD8DC" x="0" y="0" width="252" height="120" rx="2"></rect>
+                        <polygon id="Shape-path" fill="#FFFFFF" points="104.75 61.25 120.285714 79.8116667 142.035714 52 170 89 83 89"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

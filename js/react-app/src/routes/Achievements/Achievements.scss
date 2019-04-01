@@ -1,0 +1,82 @@
+.banner {
+  box-sizing: border-box;
+  padding: 26px 30px 36px;
+  margin-bottom: 5px;
+  background: url(../../assets/img/png/achievements-bg.png) center center no-repeat;
+  background-size: cover;
+}
+
+.bannerTitle {
+  margin: 0 0 15px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.bannerDescription {
+  margin: 15px 0 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.subBlock {
+  &TopCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &TopLeftCont {
+    display: flex;
+    align-items: center;
+  }
+  &Title {
+    margin-right: 10px;
+    opacity: 0.87;
+    color: #4D4D4E;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &Progress {
+    color: #9E9E9E;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.singleAchievement {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 16px 20px 20px;
+  outline: none;
+  &LockedIconCont {
+    font-size: 30px;
+    color: #CDD7DC;
+  }
+  &UnlockedIconCont {
+    font-size: 30px;
+    color: #EC407A;
+  }
+  &Title {
+    margin: 6px 0 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  &SubTitle {
+    margin: 8px 0 18px;
+    color: #4D4D4E;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  &Date {
+    color: #9E9E9E;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

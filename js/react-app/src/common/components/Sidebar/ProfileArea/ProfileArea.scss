@@ -1,0 +1,27 @@
+.profileArea {
+  padding: 30px 16px 20px;
+  color: #fff;
+  background-image: url(../../../../assets/img/png/sidebar-profile-area-bg.png);
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.profileImg {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.bottomCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.profileName {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}

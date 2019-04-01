@@ -1,0 +1,66 @@
+.loaderCont {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.noDataTitle {
+  margin: 0;
+  color: #4d4d4e;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.gridCont {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 2px 4px;
+}
+
+.gridItem {
+  width: calc(100%/4 - 15px);
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  &:not(:nth-child(4n)) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 1440px) {
+    width: calc(100%/3 - 14px);
+    text-decoration: none;
+    margin-bottom: 20px;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: calc(50% - 10px);
+    margin-right: 0;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-right: 0;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.flexWrapper {
+  display: flex;
+}
+
+.rightInnerWrapper {
+  flex-basis: 30%;
+  margin-right: 20px;
+}
+
+.leftInnerWrapper {
+  flex-basis: 70%;
+}

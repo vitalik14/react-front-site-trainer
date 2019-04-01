@@ -1,0 +1,52 @@
+.block {
+  padding: 20px 0 10px;
+  box-sizing: border-box;
+  flex-basis: 30%;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+
+.section {
+   padding: 0 20px;
+   max-height: 260px;
+   margin-bottom: 5px;
+   overflow-x: auto;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+ }
+
+.sectionTitle {
+  margin: 0 0 4px;
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 100;
+}
+
+.mobileSection {
+  margin-bottom: 20px;
+
+  button {
+    width: 100%;
+  }
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 20px 10px;
+  margin-top: 20px;
+  border-top: 1px solid #CFD8DC;
+
+  > button:first-child {
+    margin-right: 10px;
+  }
+}

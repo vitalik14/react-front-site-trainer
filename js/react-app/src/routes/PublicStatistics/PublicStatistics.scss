@@ -1,0 +1,239 @@
+.banner {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 120px;
+  margin-bottom: 20px;
+  background: url(../../assets/img/png/achievements-bg.png) center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.bannerTitle {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.bannerSubTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.chartHeadingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.title {
+  margin: 0;
+  opacity: 0.87;
+  color: #4D4D4E;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.radioGroup {
+  align-items: center;
+
+  @media (max-width: 767px) {
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+}
+
+.chart {
+  height: 340px;
+  margin-bottom: 20px;
+  background-size: cover !important;
+  position: relative;
+}
+
+.kcalChart {
+  background: url(../../assets/img/png/stats-kcal-graph-gb.png) center no-repeat;
+}
+
+.coursesChart {
+  background: url(../../assets/img/png/stats-courses-graph-gb.png) center no-repeat;
+}
+
+.chartScale {
+  display: inline-block;
+  list-style: none;
+  padding: 25px 0;
+  margin: 0 25px;
+  color: white;
+}
+
+.chartScaleDivision {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.statsItem {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.statsUserAvatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.statsUserName {
+  margin: 0 15px 0 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+
+  &:hover {
+    color: #CFD8DC;
+  }
+}
+
+.statsIconWrapper {
+  color: #A4B6FC;
+  font-size: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.statsAmount {
+  margin: 0;
+  color: #A4B6FC;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.popularVideosWrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.popularVideosBlock {
+  margin-top: 20px;
+  padding: 20px 20px 10px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+  flex-basis: calc(33% - 10px);
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.popularVideosList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.popularVideosTitle {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.popularVideosListItem {
+  padding: 10px 0;
+
+  &:not(:last-child) {
+    box-shadow: 0 1px 0 0 #EEEEEE;
+  }
+
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+.popularVideoBannerLink {
+  display: block;
+  float: left;
+}
+
+.popularVideoBanner {
+  width: 58px;
+  margin-right: 12px;
+}
+
+.popularVideoName {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+
+  &:hover {
+    color: #9E9E9E;
+  }
+}
+
+.popularCourseCountWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.popularCourseCountIconWrapper {
+  font-size: 12px;
+  height: 12px;
+  color: #4D4D4E;
+  margin-right: 5px;
+}
+
+.popularCourseCount {
+  color: #4D4D4E;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.trainerAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.trainerListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  > div:first-child {
+    display: flex;
+    align-items: center;
+  }
+
+  &:not(:last-child) {
+    box-shadow: 0 1px 0 0 #EEEEEE;
+  }
+}

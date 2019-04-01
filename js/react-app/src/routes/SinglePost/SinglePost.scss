@@ -1,0 +1,134 @@
+.postBlock {
+  padding: 40px 20px 0;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.postTopWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.postTitle {
+  margin: 0;
+  opacity: 0.87;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.favoriteIconWrapper {
+  font-size: 26px;
+  color: #9e9e9e;
+
+  &[data-red] {
+    color: #ec407a;
+  }
+}
+
+.postPictureWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postPicture{
+  width: 100%;
+}
+.postContent {
+  margin: 35px 0 20px;
+  color: #4D4D4E;
+  font-size: 16px;
+  line-height: 24px;
+  p {
+    width: 100%;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    -webkit-transition: color .2s;
+    -moz-transition: color .2s;
+    -ms-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
+    color: #0336FF;
+
+    &:hover {
+      color: #144CA4;
+    }
+  }
+}
+
+.postBottomInnerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -20px;
+  padding: 12px 20px;
+  border-top: 1px solid #cfd8dc;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.trainerInfoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.trainerAvatarLink {
+  display: block;
+}
+
+.trainerAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.trainerName {
+  color: #4d4d4e;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+
+  &:hover {
+    color: #9e9e9e;
+  }
+}
+
+.socialSharingWrapper {
+  display: flex;
+  align-items: center;
+
+  > div {
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+.postContent iframe {
+  max-width: 1280px;
+  height: calc(61vw - 25vw);
+  width: 100%;
+  @media (max-width: 1005px) {
+    height: calc(61vw - 9vw);
+  }
+}

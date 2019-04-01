@@ -1,0 +1,298 @@
+.title {
+  margin: 0 0 20px;
+  opacity: 0.87;
+  color: #4D4D4E;
+  font-size: 24px;
+}
+
+.block {
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.topBlock {
+  display: flex;
+  margin-bottom: 20px;
+
+  @media (max-width: 1162px) {
+    flex-direction: column;
+  }
+}
+
+.topSubBlock {
+  display: flex;
+
+  @media (min-width: 1163px) {
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+  }
+
+  @media (min-width: 1163px) {
+    &:not(:last-child) {
+      border-right: 1px solid #cfd8dc;
+      padding-right: 40px;
+    }
+  }
+
+  @media (max-width: 1162px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &:nth-child(2) {
+    flex-basis: 32%;
+  }
+
+  &:last-child {
+    flex-basis: 46%;
+
+    > div:last-child {
+      width: 100%;
+    }
+  }
+}
+
+.stepIconWrapper {
+  margin-right: 8px;
+  color: #4D4D4E;
+  font-size: 22px
+}
+
+.topSubBlockTitle {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.periodControlsWrapper {
+  display: flex;
+
+  > fieldset:first-child {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+  }
+}
+
+.couponInputInnerWrapper {
+  display: flex;
+  align-items: flex-end;
+
+  button {
+    margin-left: 10px;
+    min-width: 120px;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
+
+.couponValidationError {
+  margin: 10px 0;
+  color: red;
+}
+
+.plansWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.planBlock {
+  flex-basis: 28%;
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:first-child .planThumbnail {
+    background: url(../../assets/img/png/free-pricing-plan-bg.png) center no-repeat;
+  }
+
+  &:nth-child(2) .planThumbnail {
+    background: url(../../assets/img/png/premium-pricing-plan-bg.png) center no-repeat;
+  }
+
+  &:last-child .planThumbnail {
+    background: url(../../assets/img/png/gold-pricing-plan-bg.png) center no-repeat;
+  }
+
+  @media (max-width: 767px) {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.planThumbnail {
+  height: 178px;
+  margin: -20px -20px 0;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  text-align: center;
+}
+
+.planTitle {
+  margin: 20px 0 15px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.planPrice {
+  display: inline-block;
+  margin: 0 0 5px;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+
+  &:after {
+    content: '€';
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    position: absolute;
+    display: block;
+    right: -12px;
+    top: 6px;
+  }
+}
+
+.planPriceWithDiscount {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &:after {
+    content: none;
+  }
+
+  span {
+    position: relative;
+    &:after {
+      content: '€';
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 16px;
+      position: absolute;
+      display: block;
+      right: -12px;
+      top: 6px;
+    }
+  }
+}
+
+.planPer {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.regularPrice {
+  position: relative;
+  margin-right: 14px;
+  padding: 0 2px;
+  font-size: 32px;
+  margin-bottom: 3px;
+
+  span:after {
+    font-size: 12px;
+    right: -10px;
+    top: 4px;
+  }
+}
+
+.lineThrough {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.popularLabel {
+  display: block;
+  width: 130px;
+  padding: 4px 0;
+  position: absolute;
+  right: -32px;
+  top: 20px;
+  transform: rotate(40deg);
+  color: #4D4D4E;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-align: center;
+  background: white;
+}
+
+.planInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px 20px 0;
+}
+
+.planDescription {
+  margin: 0 0 -30px;
+  color: #4D4D4E;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.optionsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.optionsListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #cfd8dc;
+  }
+}
+
+.optionText {
+  font-size: 13px;
+}
+
+.optionIconWrapper {
+  height: 12px;
+  font-size: 12px;
+  color: #0336ff;
+}
+
+.planButtonWrapper {
+  margin-top: 16px;
+  text-align: center;
+}

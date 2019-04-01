@@ -1,0 +1,37 @@
+.section {
+  margin-bottom: 60px;
+}
+
+.expandableMenuItem {
+  display: flex;
+  justify-content: space-around;
+  & > button {
+
+  }
+  &:hover {
+    & > div {
+      background-color: rgba(0, 0, 0, 0.08);
+    }
+    & > button {
+      background-color: rgba(0, 0, 0, 0.15);
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+.notificationsBadge {
+  padding: 0px 10px;
+  border-radius: 10px;
+  background-color: #ec407a;
+  margin-right: 20px;
+  height: 20px;
+  line-height: 20px;
+
+  span {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}

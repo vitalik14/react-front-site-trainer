@@ -1,0 +1,249 @@
+.block {
+  padding: 40px 20px 0;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+  margin-bottom: 40px;
+
+  @media (max-width: 767px) {
+    padding-top: 20px;
+  }
+}
+
+.topWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+
+  @media (max-width: 767px) {
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  opacity: 0.87;
+  font-size: 36px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+
+  &:hover {
+    color: #9e9e9e;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+  }
+}
+
+.difficultyDesktopIconWrapper {
+  margin-left: 15px;
+  font-size: 30px;
+  height: 30px;
+  cursor: help;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.difficultyMobileIconWrapper {
+  font-size: 16px;
+  height: 16px;
+
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.actionIconsWrapper {
+  display: flex;
+}
+
+.videoViewsWrapper {
+  display: flex;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.vimeoContainer {
+  @media (max-width: 767px) {
+    flex-basis: 100% !important;
+    padding-bottom: 56.25% !important;
+    margin-bottom: 20px;
+  }
+}
+
+.webCamView {
+  @media (min-width: 768px) {
+    margin-left: 20px;
+  }
+}
+
+.favoriteIconCont,
+.likeIconCont {
+  font-size: 26px;
+  color: #9e9e9e;
+
+  &[data-red] {
+    color: #ec407a;
+  }
+}
+
+.likeIconCont {
+  margin-left: 10px;
+}
+
+.likeWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.infoWrapper {
+  width: 80%;
+  margin: 30px auto;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.infoTopWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.infoTopLeftInnerWrapper {
+  display: flex;
+  align-items: center;
+
+  > div {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  span {
+    color: #9e9e9e;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.infoIconWrapper {
+  color: #9e9e9e;
+  font-size: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.tools {
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+
+.description {
+  margin: 0;
+  color: #4d4d4e;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bottomWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -20px;
+  padding: 12px 20px;
+  border-top: 1px solid #cfd8dc;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.trainerInfoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.trainerAvatarLink {
+  display: block;
+}
+
+.trainerAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.trainerName {
+  color: #4d4d4e;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+
+  &:hover {
+    color: #9e9e9e;
+  }
+}
+
+.buttonsWrapper {
+  display: flex;
+
+  > button:first-child {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+
+    > button {
+      margin-top: 10px;
+    }
+
+    > button:first-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.beta {
+  margin: -4px 0 0 6px;
+  font-size: 8px;
+  text-transform: unset;
+}

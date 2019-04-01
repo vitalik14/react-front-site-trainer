@@ -1,0 +1,23 @@
+.gridCont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 0 2px;
+}
+
+.gridItem {
+  flex-basis: 49%;
+  margin-bottom: 20px;
+
+  &:nth-child(2n + 1) {
+    margin-right: 2%;
+  }
+
+  @media (max-width: 1024px) {
+    flex-basis: 100%;
+
+    &:nth-child(2n + 1) {
+      margin-right: 0;
+    }
+  }
+}

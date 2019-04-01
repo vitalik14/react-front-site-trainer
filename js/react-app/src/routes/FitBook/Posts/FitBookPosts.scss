@@ -1,0 +1,222 @@
+.wrapper {
+  padding: 0 2px;
+}
+
+.postBlock {
+  display: flex;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.userAvatarLink {
+  display: block;
+}
+
+.userNameLink {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -ms-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+
+  &:hover {
+    color: #9E9E9E;
+  }
+}
+
+.postTopWrapper {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.postTopRightInnerWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.postMainInnerWrapper {
+  width: 100%;
+
+  img {
+    max-height: 50vh !important;
+  }
+}
+
+.desktopAvatarWrapper {
+  margin-right: 20px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.mobileAvatarWrapper {
+  margin-right: 12px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.authorAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  @media (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.authorAvatarPlaceholderWrapper {
+  height: 60px;
+  font-size: 60px;
+  color: #9E9E9E;
+
+  @media (max-width: 767px) {
+    height: 40px;
+    font-size: 40px;
+  }
+}
+
+.authorName {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.postInfoWrapper {
+  display: flex;
+  color: #9E9E9E;
+  font-size: 12px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.divider {
+  margin: 0 4px;
+}
+
+.wasEditedIcon {
+  height: 12px;
+  margin-right: 8px;
+  color: #D6D6D6;
+  font-size: 12px;
+}
+
+.isPinnedIconWrapper {
+  height: 12px;
+  margin-right: 8px;
+}
+
+.postLink {
+  display: block;
+  text-decoration: none;
+  color: #9E9E9E;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -ms-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+
+  &:hover {
+    color: #0336FF;
+  }
+}
+
+.postContentWrapper {
+  max-height: 400px;
+  overflow-x: auto;
+  padding-right: 20px;
+}
+
+.postContent {
+  margin: 0;
+  font-size: 14px;
+}
+
+.postActionsWrapper {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.postActionWrapper {
+  display: flex;
+  align-items: center;
+
+  &:first-child {
+    margin-right: 20px;
+  }
+}
+
+.postActionIconWrapper,
+.postActionText {
+  font-size: 16px;
+  color: #9E9E9E;
+}
+
+.postActionIconWrapper {
+  margin-right: 5px;
+}
+
+.postActionText {
+  margin: 0;
+}
+
+.contentWrapper,
+.actionsWrapper {
+  display: flex;
+}
+
+.actionsWrapper {
+  @media (max-width: 767px) {
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+}
+
+.contentWrapper {
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.actionButtonWrapper {
+  font-size: 16px;
+  color: #9E9E9E;
+}
+
+.galleryImage {
+  width: calc(50% - 10px);
+  height: auto;
+  margin-bottom: 20px;
+
+  &:nth-child(2n + 1) {
+    margin-right: 20px;
+  }
+}
+
+.lightbox img {
+  cursor: pointer;
+}

@@ -1,0 +1,135 @@
+.cont {
+  width: 600px;
+  max-width: 76%;
+  margin: 20px auto;
+  padding: 22px 40px 24px;
+  background-color: #fff;
+  border-radius: 2px;
+  outline: none;
+
+  @media (max-width: 500px) {
+    padding: 22px 20px 24px;
+  }
+}
+
+.topCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.pageTitle {
+  margin: 0;
+  color: #4D4D4E;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+
+  @media print {
+    visibility: visible;
+  }
+}
+
+.closeIconCont {
+  color: #4D4D4E;
+  font-size: 14px;
+}
+
+.timeSpan {
+  margin: 0 0 15px;
+  color: #4D4D4E;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+
+  @media print {
+    visibility: visible;
+  }
+}
+
+.loaderCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.list {
+  margin: 0;
+  padding: 0 20px 0;
+  list-style: none;
+  max-height: 370px;
+  overflow-y: auto;
+
+  @media print {
+    visibility: visible;
+    max-width: none;
+    overflow-y: visible;
+  }
+
+  @media (max-width: 500px) {
+    max-height: 270px;
+  }
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: #4D4D4E;
+  font-size: 16px;
+  line-height: 28px;
+  border-bottom: 1px dotted;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  &:before {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 8px;
+    background-color: #EC407A;
+    border-radius: 50%;
+    position: absolute;
+    top: 19px;
+    left: -20px;
+  }
+  > div {
+    background-color: #fff;
+    position: relative;
+    top: 10px;
+    &:first-child {
+      color: #000;
+      padding-right: 6px;
+    }
+    &:last-child {
+      padding-left: 6px;
+    }
+  }
+}
+
+.btnsCont {
+  display: flex;
+  padding-top: 30px;
+  box-shadow: inset 0 1px 0 0 #CFD8DC;
+  .downloadBtnCont {
+    margin-right: 12px;
+    position: relative;
+  }
+
+  @media print {
+    visibility: hidden;
+
+    * {
+      visibility: hidden;
+    }
+  }
+}
+
+.downloadLoaderCont {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+}

@@ -1,0 +1,26 @@
+.block {
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.list {
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.count {
+  margin-left: 10px;
+  color: #EC407A;
+  font-size: 20px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: flex-end;
+
+  > button:first-child {
+    margin-right: 10px;
+  }
+}

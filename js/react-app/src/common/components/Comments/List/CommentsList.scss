@@ -1,0 +1,190 @@
+.list {
+  margin: 0;
+  padding: 20px 20px 0;
+  list-style: none;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.wrappedList {
+  @extend .list;
+
+  padding: 20px 0 0;
+  box-shadow: none;
+}
+
+.item {
+  display: flex;
+  padding-bottom: 20px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+
+    > .avatarPlaceholderWrapper,
+    > .userLink {
+      display: none;
+    }
+  }
+}
+
+.wrappedListItem {
+  @extend .item;
+  padding-bottom: 10px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.mainWrapper {
+  width: 100%;
+}
+
+.mainTopInnerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.contentWrapper,
+.actionsWrapper {
+  display: flex;
+}
+
+.actionsWrapper {
+  @media (max-width: 767px) {
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+}
+
+.contentWrapper {
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.actionButtonWrapper {
+  font-size: 16px;
+  color: #9E9E9E;
+}
+
+.titleWrapper {
+  @media (min-width: 768px) {
+    > .userLink,
+    > .avatarPlaceholderWrapper {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+
+  @media (max-width: 767px) {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+
+.wrappedItemAvatar {
+  @extend .avatar;
+
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+
+  @media (max-width: 767px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.avatarPlaceholderWrapper {
+  height: 60px;
+  margin-right: 20px;
+  font-size: 60px;
+  color: #9E9E9E;
+
+  @media (max-width: 767px) {
+    height: 20px;
+    font-size: 20px;
+  }
+}
+
+.userName {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.userLink {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -ms-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+
+  &:hover {
+    color: #9E9E9E;
+  }
+}
+
+.content {
+  margin: 0;
+  color: #4D4D4E;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.timeAgoCont {
+  display: flex;
+  align-items: center;
+}
+
+.wasEditedIcon {
+  height: 12px;
+  margin-right: 8px;
+  color: #D6D6D6;
+  font-size: 12px;
+}
+
+.timeAgo {
+  color: #9E9E9E;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: default;
+}

@@ -1,0 +1,232 @@
+.banner {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: url(../../assets/img/png/profile-bg.png) center center no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1220px) {
+    align-items: flex-start;
+  }
+
+  > div > div {
+    display: flex;
+
+    @media (max-width: 1220px) {
+      &:last-child {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.desktopUserAvatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.mobileUserAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.userNameWrapper {
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.userName {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+
+.friendRequestButtonsWrapper {
+  display: flex;
+
+  > button:first-child {
+    margin-right: 12px;
+  }
+
+  @media (max-width: 1220px) {
+    flex-direction: column;
+
+    > button:first-child {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.chatIconWrapper {
+  margin-left: 12px;
+  color: #EC407A;
+  font-size: 20px;
+
+  a span:last-child > span > span {
+    border-radius: unset !important;
+  }
+}
+
+.desktopChatIconWrapper {
+  @extend .chatIconWrapper;
+
+  @media (max-width: 1220px) {
+    display: none;
+  }
+}
+
+.mobileChatIconWrapper {
+  @extend .chatIconWrapper;
+  margin-left: 10px;
+  margin-top: 0;
+
+  @media (min-width: 1221px) {
+    display: none;
+  }
+}
+
+.tabContentWrapper {
+  padding: 0 2px 2px;
+}
+
+.blockTitle {
+  opacity: 0.87;
+  color: #4D4D4E;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.block {
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+  padding: 20px;
+}
+
+.generalInfoTopWrapper {
+  display: flex;
+
+  > div {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+  }
+
+  > div:first-child {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+
+    > div:first-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.burntCaloriesWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.burntCaloriesItem {
+  text-align: center;
+}
+
+.burntCaloriesTitle {
+  margin: 5px 0 20px;
+  color: #4D4D4E;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  line-height: 16px;
+}
+
+.burntCaloriesValue {
+  margin: 0 0 5px;
+  color: #A4B6FC;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  line-height: 48px;
+}
+
+.userGoal {
+  margin: 0;
+  color: #4D4D4E;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.achievementBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 16px 20px 20px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: inset 0 4px 0 0 #0336FF, 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.unlockedIconWrapper {
+  font-size: 30px;
+  color: #EC407A;
+}
+
+.achievementTitle {
+  margin: 6px 0 4px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.achievementUnlockDate {
+  margin: 0;
+  color: #9E9E9E;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.inviteEmailsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inviteEmail {
+  display: flex;
+  border-radius: 2px;
+  background-color: #eeeeee;
+  padding: 8px 12px;
+  color: #4D4D4E;
+  font-size: 14px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.removeEmailIconWrapper {
+  height: 18px;
+  margin-left: 8px;
+}

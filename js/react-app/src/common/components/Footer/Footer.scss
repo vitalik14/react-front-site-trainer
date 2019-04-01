@@ -1,0 +1,154 @@
+.cont {
+  height: 100%;
+  padding: 30px 30px 20px 40px;
+  box-sizing: border-box;
+  background-color: #323232;
+}
+
+.topCont {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.leftCont {
+  display: flex;
+  flex-basis: 60%;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 340px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.courtesyCont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-basis: 40%;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 340px) {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 28px;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+
+  &:hover {
+    color: #b4b4b4;
+  }
+}
+
+.courtesyImgsCont img:not(:last-child) {
+  margin-right: 10px;
+}
+
+.courtesyHeading {
+  margin: 0 0 20px;
+  color: #9B9B9B;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+
+  @media (max-width: 520px) {
+    margin-bottom: 10px;
+  }
+}
+
+.bottomCont {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 520px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.bottomLeftCont {
+  display: flex;
+
+  @media (max-width: 520px) {
+    margin-bottom: 10px;
+  }
+}
+
+.socialIconsCont {
+  display: flex;
+  margin-right: 22px;
+}
+
+.socialIconLink {
+  width: 26px;
+  height: 26px;
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
+.socialIcon {
+  width: 26px;
+  height: 26px;
+  fill: #666666;
+  -webkit-transition: fill .2s;
+  -moz-transition: fill .2s;
+  -ms-transition: fill .2s;
+  -o-transition: fill .2s;
+  transition: fill .2s;
+
+  &:hover {
+    fill: #b4b4b4;
+  }
+}
+
+.purlifeStudioImg {
+  width: 114px;
+  height: 26px;
+}
+
+.copyCont {
+  display: flex;
+  align-items: center;
+}
+
+.copy {
+  margin: 0;
+  color: #9B9B9B;
+  font-size: 12px;
+}

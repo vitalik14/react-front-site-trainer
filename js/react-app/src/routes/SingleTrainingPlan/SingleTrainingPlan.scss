@@ -1,0 +1,62 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.bannerTitle {
+  margin: 0 0 10px;
+  font-size: 36px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+.bannerDescription {
+  margin: 0 0 20px;
+  font-size: 16px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+.actionsWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.actionIconWrapper {
+  color: #cfd8dc;
+  font-size: 16px;
+  margin-left: 12px;
+  position: relative;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+
+  &[data-red] {
+    color: #ec407a;
+
+    &:hover {
+      color: #cfd8dc;
+    }
+  }
+
+  &:hover {
+    color: #ec407a;
+  }
+}
+
+.day {
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.dialogContent {
+  padding-top: 10px;
+}

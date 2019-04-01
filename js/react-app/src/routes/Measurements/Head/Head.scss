@@ -1,0 +1,18 @@
+.topCont {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 20px;
+}
+
+.heading {
+  margin: 0;
+  opacity: 0.87;
+  color: #4D4D4E;
+  font-size: 24px;
+  font-weight: 500;
+
+  span {
+    color: #9E9E9E;
+    margin-left: 5px;
+  }
+}

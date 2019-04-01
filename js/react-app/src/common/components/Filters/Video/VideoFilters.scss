@@ -1,0 +1,22 @@
+.section {
+  padding: 0 20px;
+  max-height: 260px;
+  margin-bottom: 5px;
+  overflow-x: auto;
+}
+
+.sectionTitle {
+  margin: 0 0 4px;
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 100;
+}
+
+.mobileSection {
+  margin-bottom: 20px;
+
+  button {
+    width: 100%;
+  }
+}

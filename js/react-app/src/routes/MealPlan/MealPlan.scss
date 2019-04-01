@@ -1,0 +1,31 @@
+.pageTitle {
+  opacity: 0.87;
+  color: #4D4D4E;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.block {
+  margin-bottom: 25px;
+}
+
+.date {
+  margin: 0 0 12px;
+  opacity: 0.87;
+  color: #4D4D4E;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.noDataTitle {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.loaderCont {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}

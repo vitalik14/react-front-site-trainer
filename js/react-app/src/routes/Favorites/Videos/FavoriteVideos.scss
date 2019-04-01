@@ -1,0 +1,103 @@
+.flexWrapper {
+  display: flex;
+  padding: 20px 2px 2px;
+  align-items: flex-start;
+
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.filtersWrapper {
+  flex-basis: 30%;
+  padding: 18px 0 20px;
+  background-color: white;
+
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+  }
+}
+
+.gridWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+  min-width: 60%;
+  margin-right: 20px;
+
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+    margin-right: 0;
+    min-width: auto;
+  }
+}
+
+.item {
+  width: calc(100%/3 - 14px);
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  &:not(:nth-child(3n)) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 1366px) {
+    width: calc(50% - 10px);
+
+    &:not(:nth-child(3n)) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 0;
+    }
+  }
+}
+
+.filtersWrapper {
+  padding: 20px 0 10px;
+  box-sizing: border-box;
+  flex-basis: 30%;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: unset;
+    box-shadow: none;
+  }
+}
+
+.filtersInnerWrap {
+  padding: 0 20px;
+  max-height: 260px;
+  margin-bottom: 5px;
+  overflow-x: auto;
+}
+
+.filterTitle {
+  margin: 0 0 4px;
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 100;
+}
+
+.mobileSingleTypeFiltersCont {
+  margin-bottom: 20px;
+
+  button {
+    width: 100%;
+  }
+}

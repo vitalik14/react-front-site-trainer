@@ -1,0 +1,116 @@
+.freeUserCont {
+  padding: 40px 30px;
+  border-radius: 2px;
+  background: url(../../../assets/img/png/upgrade-banner-bg.png) center center no-repeat;
+  background-size: cover;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+
+  @media (max-width: 414px) {
+    padding: 30px 20px;
+  }
+}
+
+.freeUserSecondaryText {
+  margin: 0 auto 20px;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.freeUserBottomCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.freeUserPrimaryText {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.freeUserButtonCont {
+  color: #fff;
+  margin-left: 40px;
+
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+
+.premiumUserCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 40px 30px;
+  border-radius: 2px;
+  background: url(../../../assets/img/png/upgrade-banner-bg.png) center center no-repeat;
+  background-size: cover;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 414px) {
+    padding: 30px 20px;
+  }
+}
+
+.premiumUserLeftCont {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.premiumUserPrimaryText {
+  margin: 0 0 14px;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: bold;
+
+  @media (max-width: 414px) {
+    font-size: 20px;
+  }
+}
+
+.premiumUserCountDown {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 26px;
+
+  @media (max-width: 414px) {
+    font-size: 17px;
+  }
+}
+
+.premiumUserDiscount {
+  margin: 0 40px 0;
+  color: #FFFFFF;
+  font-size: 76px;
+  font-weight: 900;
+  line-height: 90px;
+
+  @media (max-width: 768px) {
+    margin: 20px 0;
+  }
+
+  @media (max-width: 414px) {
+    margin: 10px 0;
+    font-size: 60px;
+  }
+}

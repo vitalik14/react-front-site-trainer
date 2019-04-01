@@ -1,0 +1,72 @@
+.block {
+  padding: 20px;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.title {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+
+.description {
+  margin: 0 0 20px;
+  color: #4D4D4E;
+  font-size: 14px;
+}
+
+.preferencesFilterWrap {
+  margin-bottom: 10px;
+}
+
+.radioGroup {
+  @media (max-width: 767px) {
+    flex-direction: column !important;
+  }
+}
+
+.fieldsCont {
+  display: flex;
+  margin-bottom: 20px;
+
+  > div {
+    flex-basis: 33.33%;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 767px ) {
+    flex-direction: column;
+
+    > div {
+      flex-basis: 100%;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.buttonWrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.preferencesChangeWarningPopover {
+  position: absolute;
+  top: 32px;
+  padding-top: 4px;
+  cursor: default;
+}
+
+.preferenceChangeWarningText {
+  margin: 0 0 4px;
+  color: black;
+  font-size: 11px;
+}

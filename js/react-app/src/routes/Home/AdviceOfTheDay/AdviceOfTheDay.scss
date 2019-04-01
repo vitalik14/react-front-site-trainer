@@ -1,0 +1,57 @@
+.parentCont {
+  width: 100%;
+}
+
+.loader {
+  margin: 28px 0;
+}
+
+.heading {
+  margin: 6px auto 18px;
+  opacity: 0.87;
+  color: #4D4D4E;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.adviceCont {
+  min-height: 207px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+
+  @media (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.advice {
+  margin: 0;
+  color: #000000;
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: center;
+
+  @media (max-width: 1200px) {
+      margin: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .quoteIconCont {
+    display: none;
+  }
+
+}

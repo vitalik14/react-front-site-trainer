@@ -1,0 +1,43 @@
+.innerCont {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.logoCont {
+  height: 24px;
+  margin: 2px 10px 0 0;
+}
+
+.input {
+  &::-webkit-input-placeholder {
+    font-family: Roboto;
+    color: #fff;
+    opacity: 0.7;
+  }
+
+  &::-moz-placeholder {
+    font-family: Roboto;
+    color: #fff;
+    opacity: 0.7;
+  }
+
+  &:-ms-input-placeholder {
+    font-family: Roboto;
+    color: #fff;
+    opacity: 0.7;
+  }
+
+  &-moz-placeholder {
+    font-family: Roboto;
+    color: #fff;
+    opacity: 0.7;
+  }
+}
+
+.hamburgerIconCont {
+  display: none;
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}

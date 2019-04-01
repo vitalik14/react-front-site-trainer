@@ -1,0 +1,122 @@
+.flexWrapper {
+  display: flex;
+
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.allFriendsWrapper {
+  flex-basis: 70%;
+  margin-right: 20px;
+}
+
+.friendRequestsWrapper {
+  flex-basis: 30%;
+}
+
+.title {
+  margin: 0 0 18px;
+  opacity: 0.87;
+  color: #4D4D4E;
+  font-size: 24px;
+  line-height: 28px;
+
+  > span {
+    @media (max-width: 360px) {
+      display: block;
+      margin-left: 0;
+    }
+  }
+}
+
+.itemsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex-basis: calc(50% - 10px);
+  padding: 20px 12px 12px 20px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+  text-align: right;
+
+  &:not(:nth-child(2n)) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 1200px) {
+    flex-basis: 100%;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 0;
+    }
+  }
+}
+
+.listItem {
+  @extend .item;
+  flex-basis: 100%;
+  margin-bottom: 0;
+
+  &:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+}
+
+.itemTopWrapper {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.avatarLink {
+  height: 60px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.friendNameLink {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -ms-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+
+  &:hover {
+    color: #4D4D4E;
+  }
+}
+
+.friendName {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+}
+
+.friendsSince {
+  margin: 0;
+  color: #9E9E9E;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.userBadge {
+
+}

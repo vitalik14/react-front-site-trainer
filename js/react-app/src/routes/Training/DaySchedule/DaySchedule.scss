@@ -1,0 +1,37 @@
+.block {
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+  border-radius: 2px;
+  padding: 25px 20px 25px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 0 0 15px;
+  color: #4D4D4E;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.list {
+  list-style: none;
+  padding: 34px 0 0;
+  margin: 0;
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  overflow: auto;
+  max-height: 310px;
+}
+
+#trainers {
+  visibility: hidden;
+}
+
+.hideCourse {
+  display: none;
+}
+
+.buttonLiveCourses {
+  margin-left: 10px;
+}

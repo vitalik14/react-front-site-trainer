@@ -1,0 +1,58 @@
+@media (max-width: 1024px) {
+
+  .shifted-content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .app-content {
+    margin-bottom: -275px;
+  }
+
+  .app-content:after {
+    content: '';
+    display: block;
+    height: 275px;
+  }
+
+  #app-footer {
+    height: 275px;
+  }
+
+}
+
+@media (max-width: 520px) {
+
+  .app-content {
+    margin-bottom: 0;
+  }
+
+  .app-content:after {
+    display: none;
+  }
+
+  #app-footer {
+    height: auto;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  #login-page {
+    background: none;
+    align-items: flex-start;
+
+    form {
+      width: 100%;
+      height: 100%;
+      box-shadow: none;
+
+    }
+  }
+
+}

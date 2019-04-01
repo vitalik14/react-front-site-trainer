@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: $main-font;
+}
+
+blockquote,
+button,
+input,
+textarea,
+select{
+  font-family:$main-font;
+  font-weight: 400;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box
+}
+
+.shifted-content {
+  width: calc(100% - 310px);
+  margin-left: 310px;
+  -webkit-transition: margin-left .2s;
+  -moz-transition: margin-left .2s;
+  -ms-transition: margin-left .2s;
+  -o-transition: margin-left .2s;
+  transition: margin-left .2s;
+}
+
+.app-content {
+  min-height: calc(100% - 64px);
+  margin: 0 0 -180px 310px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+}
+
+body.sidebar-collapsed {
+  .app-content {
+    margin: 0 0 -180px 0;
+  }
+
+  .shifted-content {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.app-content:after {
+  content: '';
+  display: block;
+  height: 180px;
+}
+
+#app-header {
+  height: 64px;
+}
+
+#app-footer {
+  height: 180px;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(85, 0, 255, .5);
+}
+
+#notifications-popper {
+  z-index: 10000;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity .5s .5s ease;
+  opacity: 0;
+}
+
+[placeholder]:focus::-moz-placeholder {
+  transition: opacity .5s .5s ease;
+  opacity: 0;
+}
+
+[placeholder]:focus:-ms-input-placeholder {
+  transition: opacity .5s .5s ease;
+  opacity: 0;
+}
+
+[placeholder]:focus:-moz-placeholder {
+  transition: opacity .5s .5s ease;
+  opacity: 0;
+}
+
+input[class^='MuiInput']:focus::-webkit-input-placeholder {
+  transition: opacity .5s .5s ease;
+  opacity: 0.42;
+}
+
+input[class^='MuiInput']:focus::-moz-placeholder {
+  transition: opacity .5s .5s ease;
+  opacity: 0.42;
+}
+
+input[class^='MuiInput']:focus:-ms-input-placeholder {
+  transition: opacity .5s .5s ease;
+  opacity: 0.42;
+}
+
+input[class^='MuiInput']:focus:-moz-placeholder {
+  transition: opacity .5s .5s ease;
+  opacity: 0.42;
+}
+
+[data-swipeable] {
+  overflow: visible !important;
+}
+
+@media print {
+
+  #app-header,
+  #app-footer,
+  #app-sidebar,
+  .app-content {
+    visibility: hidden;
+    * {
+      visibility: hidden;
+    }
+  }
+
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

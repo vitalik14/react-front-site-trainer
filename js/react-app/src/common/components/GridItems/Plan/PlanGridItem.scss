@@ -1,0 +1,223 @@
+.cont {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+  position: relative;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 168px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.innerCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+  text-decoration: none;
+
+  &:hover {
+    color: #9E9E9E;
+  }
+}
+
+.description {
+  margin: 10px auto;
+  color: #4D4D4E;
+  font-size: 14px;
+  line-height: 20px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+  max-height: 100px;
+}
+
+.bottomCont {
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.timeAgoCont {
+  display: flex;
+  align-items: center;
+}
+
+.timeAgo {
+  color: #9E9E9E;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.calendarIconCont {
+  margin-right: 5px;
+  font-size: 14px;
+  color: #9E9E9E;
+}
+
+.metadataWrapper {
+  justify-content: space-between;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.metadataIconWrapper {
+  font-size: 14px;
+  color: #9E9E9E;
+
+  &[data-cursor-help] {
+    cursor: help;
+  }
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+.metadataLeftInnerWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.metadataRightInnerWrapper {
+  display: flex;
+}
+
+.labelInfo {
+  border-color: #00BCD4;
+  display: inline-block;
+  font-weight: 500;
+  padding: 2px 5px 1px 5px;
+  line-height: 1.5384616;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #00BCD4;
+  margin: 0 0 0 3px;
+  vertical-align: text-bottom;
+  color: #fff;
+}
+
+.ribbonContainer {
+  width: 104px;
+  height: 106px;
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+.ribbon {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6666667;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  padding: 5px 0;
+  left: -11px;
+  top: 25px;
+  width: 150px;
+  background-color: #4caf50;
+  color: #fff;
+  letter-spacing: .25px;
+  z-index: 999;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: 0 4px 6px rgba(0,0,0,.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,.1);
+  background-color: #ef5350;
+  border-color: #ef5350;
+  color: #fff;
+}
+.inProgress {
+  font-size: 12px;
+  background: #00BCD4;
+  color:#fff;
+  padding:10px;
+  margin: 10px 0px 10px;
+  border-radius: 3px;
+  line-height: 1.5
+}
+.btnLegitRipple {
+  background: url('/assets/js/react-app/src/assets/img/png/icon-qrcode.png') no-repeat 12px 7px;
+  width: 94px;
+  height: 20px;
+  padding: 8px 10px 8px 31px;
+  line-height: 3;
+  touch-action: manipulation;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  white-space: nowrap;
+  font-size: 12px;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  transition: all ease-in-out .15s;
+  text-transform: uppercase;
+  font-weight: 500;
+  user-select: none;
+
+  &:hover {
+    background-color: #e9e9e9;
+  }
+  &:active {
+    background-color: #dcdcdc;
+  }
+}
+
+.userList {
+  padding: 0;
+  margin: 10px 0 0 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.userList li {
+  width:100%;
+  display: inline-block;
+  color:#4D4D4E;
+  vertical-align:top
+}
+
+.userList li > * {
+  margin: 0;
+}
+
+.userList li span {
+  font-size: 13px;
+  color:#4D4D4E;
+  vertical-align: bottom;
+  display: inline-block;
+  margin: 0 0 4px 2px;
+}

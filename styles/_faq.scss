@@ -1,0 +1,224 @@
+.faq{
+  &__box{
+    display: flex;
+    @media (max-width: $media-medium-size) {
+      display: block;
+    }
+  }
+  &__content{
+    flex:1;
+    padding-right: 20px;
+    @media (max-width: $media-medium-size) {
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+  &__sidebar{
+    width: 300px;
+    flex:none;
+    @media (max-width: $media-biggest-size) {
+      width: 250px;
+    }
+    @media (max-width: $media-medium-size) {
+      width: 100%;
+    }
+  }
+  &__title{
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 28px;
+    opacity: 0.87;
+    color: #4D4D4E;
+  }
+
+
+  &__popuplar{
+    margin-bottom: 20px;
+  }
+  &__support{
+
+  }
+}
+
+.faq-popular{
+  padding: 17px 20px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+  border-radius: 2px;
+  &__item{
+    list-style: none;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #CFD8DC;
+
+    &:last-child{
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+  }
+  &__link{
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    color: #4D4D4E;
+    text-decoration: none;
+    &:hover{
+      color: $main-color;
+    }
+  }
+}
+
+
+.support-block{
+  color: #ffffff;
+  //background: $main-color;
+  background: url("../images/pages/bg-support.png")no-repeat $main-color;
+  background-size: cover;
+  background-position: center center;
+  padding: 18px 20px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+  &__title{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-bottom: 13px;
+  }
+  &__txt{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 11px;
+  }
+  &__btn{
+    text-align: right;
+  }
+}
+
+
+
+
+.faq-answer{
+  background: #ffffff;
+  padding: 22px 20px 20px 44px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+  &__title{
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    margin-bottom: 15px;
+    color: #000;
+    &:before{
+      content: "";
+      position: absolute;
+      background: url("../images/icons/tip.svg")no-repeat;
+      width: 14px;
+      height: 14px;
+      background-size: contain;
+      right: 100%;
+      top: 4px;
+      margin-right: 10px;
+    }
+  }
+  &__content{
+    font-size: 14px;
+    line-height: 20px;
+    color: #4D4D4E;
+  }
+}
+
+
+
+.faq-list{
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+  &__title{
+    color: #000;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 23px;
+  }
+  &__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__item{
+    margin-bottom: 24px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__link{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    color: #000;
+    padding-left: 23px;
+    text-decoration: none;
+    &:before{
+      content: "";
+      position: absolute;
+      background: url("../images/icons/tip.svg")no-repeat;
+      width: 14px;
+      height: 14px;
+      background-size: contain;
+      left: 0;
+      top: 4px;
+    }
+    &:hover{
+      color: $main-color;
+    }
+  }
+}
+
+
+
+.faq-category{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin:0 -10px;
+  &__col{
+    width: 50%;
+    padding: 0px 10px 20px;
+    box-sizing: border-box;
+    @media (max-width: $media-small-size) {
+      width: 100%;
+    }
+  }
+  &__one{
+    background: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.13);
+    border-radius: 2px;
+    padding: 17px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover{
+      background: $main-color;
+      .faq-category__name{
+        color: white;
+      }
+      .faq-category__num{
+        color: #ffffff;
+      }
+    }
+  }
+  &__name{
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    text-decoration: none;
+    padding-right: 15px;
+  }
+  &__num{
+    color: #9E9E9E;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

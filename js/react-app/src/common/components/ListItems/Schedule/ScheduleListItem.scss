@@ -1,0 +1,150 @@
+.wrap {
+  position: relative;
+  padding: 0 0 10px;
+}
+
+.outerWrap {
+  padding-left: 40px;
+  justify-content: space-around;
+
+  &[data-flex-direction='row'] {
+    flex-direction: row;
+  }
+
+  &[data-flex-direction='column'] {
+    flex-direction: column;
+
+    .innerWrap:last-child {
+      margin-top: -1px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column !important;
+    padding-left: 0;
+  }
+}
+
+.time {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  color: #9E9E9E;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+
+  @media (max-width: 1024px) {
+    top: -16px;
+  }
+}
+
+.outerWrap,
+.innerWrap,
+.mainInfoWrap,
+.extraInfoWrap,
+.titleWrap,
+.extraInfoInnerWrap {
+  display: flex;
+}
+
+.innerWrap {
+  text-decoration: none;
+  flex-basis: 45%;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-bottom-color: #EEEEEE;
+  transition: border-color 0.2s;
+
+  &[href]:hover {
+    border-color: #EEEEEE;
+  }
+
+  @media (max-width: 1024px) {
+    &:last-child {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.titleWrap {
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  color: #000000;
+  font-size: 16px;
+  line-height: 19px;
+  word-break: break-word;
+
+  @media (max-width: 1024px) {
+    word-break: normal;
+  }
+}
+
+.trainerName {
+  margin: 0;
+  color: #4D4D4E;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.trainerImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.infoIconCont {
+  color: #9E9E9E
+}
+
+.extraInfoWrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+
+  > div {
+    display: flex;
+  }
+}
+
+.extraInfoInnerWrap {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  span {
+    color: #9E9E9E;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.iconCont {
+  height: 14px;
+  font-size: 14px;
+  color: #9E9E9E;
+  margin-right: 4px;
+}
+
+.placeholderText {
+  margin: auto;
+}
+
+.badgeLive {
+  font-size: 10px;
+  font-weight: bold;
+  background: orange;
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: #fff;
+  display: none;
+}
+
+.innerWrap[data-live=true] .badgeLive {
+  display: block;
+}

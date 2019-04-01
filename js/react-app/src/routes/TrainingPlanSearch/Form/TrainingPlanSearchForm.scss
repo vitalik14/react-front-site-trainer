@@ -1,0 +1,80 @@
+.block {
+  padding: 20px;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.preferencesFilterWrap {
+  margin-bottom: 10px;
+}
+
+.radioGroup {
+  @media (max-width: 767px) {
+    flex-direction: column !important;
+  }
+}
+
+.fieldsCont {
+  display: flex;
+  margin-bottom: 20px;
+
+  > div {
+    flex-basis: 33.33%;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 767px ) {
+    flex-direction: column;
+
+    > div {
+      flex-basis: 100%;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.buttonsWrap {
+  margin-top: 30px;
+
+  > button {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    > button {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.preferencesChangeWarningPopover {
+  position: absolute;
+  top: 32px;
+  padding-top: 4px;
+  cursor: default;
+}
+
+.preferenceChangeWarningText {
+  margin: 0 0 4px;
+  color: black;
+  font-size: 11px;
+}

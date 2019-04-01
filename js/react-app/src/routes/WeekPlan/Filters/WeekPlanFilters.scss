@@ -1,0 +1,28 @@
+.block {
+  padding: 17px 20px 0;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.title {
+  margin: 0 0 14px;
+  width: 65px;
+  color: #9E9E9E;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 14px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+  padding: 12px 20px;
+  margin: 0 -20px;
+  border-top: 1px solid #EEEEEE;
+
+  > button:first-child {
+    margin-right: 10px;
+  }
+}

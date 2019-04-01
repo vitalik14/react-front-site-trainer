@@ -1,0 +1,22 @@
+.cont {
+  display: flex;
+  font-size: 20px;
+  line-height: 24px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.divider {
+  margin: 0 4px;
+  color: #e6e6e6;
+}
+
+.link {
+  color: #e6e6e6;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
+}

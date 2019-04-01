@@ -1,0 +1,15 @@
+.txt-sect{
+  &__title{
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 28px;
+    opacity: 0.87;
+    color: #4D4D4E;
+  }
+  &__box{
+    background: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+    padding: 25px 20px;
+  }
+}
